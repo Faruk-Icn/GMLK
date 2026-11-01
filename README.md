@@ -148,6 +148,8 @@ end)
 
 `New(capacity, windowSeconds)` requires a positive integer capacity and a positive window in seconds. The bucket permits an initial burst up to capacity and refills evenly over the window. The lower-level `Allow(key, cost)` method returns `allowed`, `retryAfter`, and the remaining token balance. `Remaining(key)`, `Reset(key)`, and `ResetAll()` are also available. Keys can be strings or numbers; omit the key for one shared bucket. A custom clock function can be passed as the third `New` argument for deterministic tests. Validate remote arguments and permissions inside each handler.
 
+Rate limits are kept in memory for each server. Use a shared store if an action needs a limit across multiple servers.
+
 ### More modules
 
 | Module | Main API | Use |
