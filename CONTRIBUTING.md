@@ -31,4 +31,4 @@ Run `luau-compile --null` on changed `.luau` files to catch syntax errors. Try t
 
 ## Submit a pull request
 
-Fork the repository, make a branch for one focused change, and open a pull request against `main`. Explain what changed, why it helps, and how you checked it. Link any related issue. Screenshots or a short recording are useful for changes that affect what players see.
+Create a branch (or fork the repository) for one focused change, and open a pull request against `main`. Explain what changed, why it helps, and how you checked it. Link any related issue. Screenshots or a short recording are useful for changes that affect what players see.
