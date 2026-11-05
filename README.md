@@ -47,6 +47,18 @@ Clone this repository and sync `default.project.json` with [Rojo](https://rojo.s
 
 Place your client ModuleScripts under `ReplicatedStorage.Modules.Client` and your server ModuleScripts under `ServerStorage.Modules.Client`. Both bootstrap scripts search descendants, so nested folders are supported. Each bootstrap runs once per client or server session.
 
+## Troubleshooting
+
+| What you see | What to check |
+| --- | --- |
+| `GMLK` or a child utility cannot be found | Sync `default.project.json` and confirm the main ModuleScript is at `ReplicatedStorage.Modules.Library.GMLK`, with utilities beneath it. If copying by hand, use `src/GMLK/init.luau` as the main ModuleScript's source. |
+| Client or server modules never start | Confirm the bootstrap scripts are in `StarterPlayer.StarterPlayerScripts` and `ServerScriptService`, and put modules in the corresponding `ReplicatedStorage.Modules.Client` or `ServerStorage.Modules.Client` folder. The server folder is also named `Client`. Press **Play**, then check Studio Output for loader warnings. |
+| Rojo changes do not appear in Studio | Run `rojo serve default.project.json` from the repository root, connect the Rojo Studio plugin to that server, and sync the project. For the example, serve `examples/coin-counter/default.project.json` instead. |
+| The coin button does not show a new balance | Open Studio's **Output** panel and click **Add coin** while playing. The example prints balances and rate-limit warnings there. Wait for the retry delay after three quick requests. |
+| Webhook notifications do not arrive | The tracker is optional and is not installed by the default Rojo project. Install it on the server, enable **Allow HTTP Requests**, and configure the `GMLK_WEBHOOK_URL` secret for the endpoint domain, including a separate local secret for Studio. Check Output for warnings and the endpoint's response. |
+
+If the problem persists, open a GitHub issue with the expected result, the Output error, and the smallest project setup that reproduces it. Remove webhook URLs, API keys, and other private data first.
+
 ## Lifecycle modules
 
 ```luau
