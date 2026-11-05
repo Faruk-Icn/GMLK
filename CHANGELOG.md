@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Added a coin counter demonstration GIF to the README.
+- Documented common installation, Rojo, example, and webhook setup problems.
+- Added a security policy with private vulnerability reporting guidance.
+
 ## v0.1.0
 
 First tagged release of GMLK.

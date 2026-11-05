@@ -4,6 +4,8 @@ GMLK is an open source Luau framework for loading Roblox modules through `Init` 
 
 Want to help improve it? Read the [contribution guide](CONTRIBUTING.md).
 
+See the [changelog](CHANGELOG.md) for release notes and upcoming changes.
+
 ## Try it in 5 minutes
 
 1. Clone this repository and install [Rojo](https://rojo.space/).
