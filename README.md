@@ -13,6 +13,8 @@ Want to help improve it? Read the [contribution guide](CONTRIBUTING.md).
 
 The [coin counter example](examples/coin-counter) uses the same GMLK source as the main project. Its [project file](examples/coin-counter/default.project.json) shows where each script and module belongs.
 
+![Coin counter example showing the Add coin button and Studio Output feedback](assets/coin-counter-demo.gif)
+
 If GMLK helps your project, a GitHub star is appreciated ⭐
 
 ![Starstruck achievement animation](https://githubachievements.com/cdn-cgi/image/width=1200/images/starstruck/1.gif)
