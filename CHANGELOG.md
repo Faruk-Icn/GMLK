@@ -1,10 +1,12 @@
 # Changelog
 
-## Unreleased
+## v0.1.1
 
 - Added a coin counter demonstration GIF to the README.
 - Documented common installation, Rojo, example, and webhook setup problems.
 - Added a security policy with private vulnerability reporting guidance.
+- Added a contribution guide with setup checks and pull request guidance.
+- Clarified that remote rate limits are per player and per limiter instance.
 
 ## v0.1.0
 
